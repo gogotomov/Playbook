@@ -1,0 +1,14 @@
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+   
+    - uses: actions/checkout@v1
+    - name: Clone GIT
+      run: |
+      git clone https://github.com/gogotomov/Playbook.git
+    - name: List files in GIT
+      run: |
+      git show d6a3e51c9737286ed22c6cabe7c155fadc6848f8:Test1
