@@ -1,7 +1,5 @@
 name: Github Action Test
-
 on: push
-
 jobs:
   my-job:
     name: GitHubAction
