@@ -6,7 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone GIT using Checkout@1 action
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
+	    with:
+	      fetch-depth: 2
+	  - name: Diff
+	    run: |
+        git diff HEAD^ HEAD
     - name: List files in GIT
       run: |
         cat Test1
