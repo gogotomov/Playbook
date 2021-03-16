@@ -8,6 +8,6 @@ jobs:
     - name: Clone GIT
       run: |
         git clone https://github.com/gogotomov/Playbook.git
-    - name: List files in GIT
-      run: |
-        git show c2d4f9833a71e167e55b828201c26438689cff7b:Test1
+   # - name: List files in GIT
+   #   run: |
+   #     git show c2d4f9833a71e167e55b828201c26438689cff7b:Test1
