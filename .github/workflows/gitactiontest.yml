@@ -8,6 +8,7 @@ jobs:
     - name: Clone GIT using Checkout@2 action
       uses: actions/checkout@v1
       with:
+        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
         fetch-depth: 2
     - name: Diff
       run: |
