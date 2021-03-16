@@ -6,12 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone GIT using Checkout@2 action
-      run : |
-        git clone git@github.com:gogotomov/Playbook.git
-     # uses: actions/checkout@v2
-     # with:
-     #   ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
-     #   fetch-depth: 2
+      uses: actions/checkout@v2
+      with:
+        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        fetch-depth: 2
     - name: Diff
       run: |
         git diff HEAD^ HEAD
