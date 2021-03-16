@@ -5,7 +5,7 @@ jobs:
     name: GitHubAction
     runs-on: ubuntu-latest
     steps:
-    - name: Clone GIT using Checkout@2 TESTTT123 action
+    - name: Clone GIT using Checkout@2 action
       uses: actions/checkout@v1
       with:
         fetch-depth: 2
