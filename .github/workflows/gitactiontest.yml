@@ -3,11 +3,10 @@ on: push
 jobs:
   my-job:
     name: GitHubAction
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
-    - name: Clone GIT
+    - name: Clone GIT using Checkout@1 action
+      uses: actions/checkout@v1
+    - name: List files in GIT
       run: |
-        git clone https://github.com/gogotomov/Playbook.git
-   # - name: List files in GIT
-   #   run: |
-   #     git show c2d4f9833a71e167e55b828201c26438689cff7b:Test1
+        cat Test1
