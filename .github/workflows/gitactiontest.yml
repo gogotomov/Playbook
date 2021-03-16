@@ -3,7 +3,7 @@ on: push
 jobs:
   my-job:
     name: GitHubAction
-    runs-on: ubuntu
+    runs-on: ubuntu-18.04
     steps:
     - name: Clone GIT
       run: |
