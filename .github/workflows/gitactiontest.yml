@@ -10,9 +10,6 @@ jobs:
       with:
         ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
         fetch-depth: 2
-    - name: Diff
-      run: |
-        git diff HEAD^ HEAD
     - name: List files in GIT
       run: |
         cat Test1
