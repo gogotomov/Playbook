@@ -8,6 +8,7 @@ jobs:
     - name: Clone GIT using Checkout@2 action
       uses: actions/checkout@v2
       with:
+        repository: gogotomov/CI-CD-Jenkins
         ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
         fetch-depth: 2
     - name: List files in GIT
