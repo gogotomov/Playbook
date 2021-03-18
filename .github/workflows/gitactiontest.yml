@@ -5,11 +5,8 @@ jobs:
     name: GitHubAction
     runs-on: ubuntu-latest
     steps:
-    - name: Clone GIT using Checkout@2 action
+    - name: Checkout@2 action
       uses: actions/checkout@v2
-      with:
-        repository: gogotomov/CI-CD-Jenkins
-        #ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
-     #- name: List files in GIT
-    #  run: |
-    #    cat Test1
+    - name: List files in GIT
+      run: |
+        cat Test1
